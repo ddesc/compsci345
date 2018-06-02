@@ -1,0 +1,298 @@
+html,
+body {
+    background: rgb(245, 245, 255);
+    margin-top: 0;
+    padding-top: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.nav {
+    margin-top: 5px;
+    float: left;
+    width: 10%;
+    position: fixed;
+}
+
+.banner {
+    background-color: rgba(245, 245, 255, 0.8);
+    position: fixed;
+    width: 88%;
+    z-index: 5;
+}
+
+.navbutton {
+    width: 100%;
+    background-color: white;
+    padding-top: 26%;
+    padding-bottom: 12%;
+    border: none;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 24px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+}
+
+.navbutton:hover {
+    background-color: rgb(141, 172, 219);
+    cursor: pointer;
+    color: white;
+}
+
+.main {
+    background-color: rgb(245, 245, 255);
+    margin-left: 11%;
+    position: relative;
+}
+
+.homepage {
+    margin-left: 50px;
+    position: relative;
+    font-size: 14px;
+    margin-top: 6%;
+    float: left;
+}
+
+#calendar {
+    margin-top: 8%;
+    margin-left: 8%;
+    float: left;
+}
+
+.assignmentPage {
+    display: inline-block;
+    margin-top: 6%;
+}
+
+.assignmentBox {
+    display: block;
+    background: white;
+    min-height: 200px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-right: 18%;
+    position: relative;
+}
+
+#assignmentHeader {
+    padding-top: 5px;
+    padding-left: 30px;
+    background: rgb(161, 199, 255);
+}
+
+#assignmentInfo {
+    padding-left: 30px;
+    padding-right: 20px;
+    background: white;
+    display: inline-block;
+    padding-bottom: 70px;
+}
+
+.closedButton {
+    background: rgb(207, 207, 207);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+    padding: 14px 80px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20;
+    right: 20;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.closedButton:hover {
+    cursor: not-allowed;
+}
+
+.attemptButton {
+    background: rgb(161, 199, 255);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+    padding: 14px 65px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20;
+    right: 20;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.attemptButton:hover {
+    background: rgb(141, 172, 219);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.editButton {
+    background: rgb(161, 199, 255);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+    padding: 14px 80px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20;
+    right: 20;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.editButton:hover {
+    background: rgb(141, 172, 219);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.unavailableButton {
+    background: rgb(207, 207, 207);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+    padding: 14px 54px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20;
+    right: 20;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.unavailableButton:hover {
+    cursor: not-allowed;
+}
+
+.peoplePage {
+    margin-left: 50px;
+    display: inline-block;
+    margin-top: 6%;
+}
+
+
+/*SOURCE https://www.w3schools.com/howto/howto_css_circles.asp*/
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: rgb(98, 255, 98);
+    border-radius: 50%;
+    float: right;
+    margin: 22px 10px 0px 10px;
+}
+
+
+/*modified size, colour, and positioning.
+END SOURCE*/
+
+.dotOff {
+    height: 12px;
+    width: 12px;
+    background-color: rgb(170, 170, 170);
+    border-radius: 50%;
+    float: right;
+    margin: 22px 10px 0px 10px;
+}
+
+.peopleBox {
+    display: inline-block;
+    width: 400px;
+    height: 430px;
+    margin: 20px 50px;
+    background: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+.peopleBox:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.iconDiv {
+    padding-left: 24%;
+    margin-top: 40px;
+    background: rgb(161, 199, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#name {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.peopleDesc {
+    margin: -20px 30px;
+}
+
+.profilePage {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+#profileIcon {
+    font-size: 300px;
+    display: inline-block;
+}
+
+.profileInfo {
+    margin-left: 30px;
+    width: 65%;
+    display: inline-block;
+}
+
+.answers {
+    margin-left: 5%;
+}
+
+#answer1 {
+    width: 60%;
+    background: white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.comments {
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+}
+
+.submitButton {
+    background: rgb(161, 199, 255);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+    padding: 22px 30px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+    position: relative;
+    bottom: 27px;
+    left: 7px;
+}
+
+.chat {
+    height: 80px;
+    width: 128px;
+    position: fixed;
+    right: 30;
+    bottom: 30;
+}
+
+.chat:hover {
+    cursor: pointer;
+    color: #4D6A96;
+}
